@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Барбершоп "Бородинский"</title>
+	<link rel="stylesheet" href="normalize/normalize.css">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	
+	<header class="main_header">
+		<div class="container clearfix">
+			<nav class="main_navigation">
+				<ul>
+					<li class="active"><a href="index.html">Главная</a></li>
+					<li><a href="barbershop_item.html">Информация</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="barbershop_price.html">Прайслист</a></li>
+					<li><a href="barbershop_shop.html">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="user_block">
+				<a href="class.html" class="login">Вход</a>
+			</div>	
+		</div>
+	</header>
+	<div class="container main_container">
+		<div class="logo">
+			<img src="img/logo.png" alt="Барбершоп бородинский" width="368px" height="204">
+		</div>
+		<section class="features_row clearfix">
+			<div class="features_item">
+				<div class="features_title">Быстро</div>
+				<p>Мы делаем свою работу быстро! Два часа пролетят не заметно и вы-	счастливый обладатель стильной стрижки-минутки!
+				</p>
+			</div>
+			<div class="features_item">
+				<div class="features_title">Круто</div>
+				<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! во всяком случае внешне.
+				</p>
+			</div>
+			<div class="features_item">
+				<div class="features_title">Дорого</div>
+				<p>Наши мастера-профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает определенный статус? 
+				</p>
+			</div>
+		</section>
+		<div class="index_content clearfix">
+			<section class="content_column_left">
+				<h2 class="content_column_title">Новости</h2>
+				<ul class="new_preview">
+					<li>
+						Нам наконец завезли Ягермайстер! теперь вы можете пропустить стаканчик во время стрижки<br>
+						<time datetime="2015-09-25">25 сентября</time>
+					</li>
+					<li>
+						В нашей команде пополнение, Борис "бритва" стригунец, обладатель множества титулов и наград пополнил наши стройные ряды<br>
+						<time datetime="2015-09-19">19 сентября</time>
+					</li>
+				</ul>
+				<a href="#" class="btn">Все новости</a>
+			</section>
+			<section class="content_column_right">
+				<h2 class="content_column_title">Фотогалерея</h2>
+				<div class="gallery">
+					<figure class="gallery_content">
+						<img src="img/galery_img.jpg" alt="" width="286" height="164">
+					</figure>
+					<button class="gallery_prev btn">Назад</button>
+					<button class="gallery_next btn">Вперёд</button>
+				</div>
+			</section>
+		</div>
+		<div class="index_content clearfix">
+			<section class="content_column_left">
+				<div class="main_contacts">
+					<h2 class="content_column_title">Контактная информация</h2>
+					<p>Барбершоп "Бородинский<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br> Телефон: +7 (495) 666-02-66</p>
+					<p>Время работы: <br>
+					пн-пт: с 10:00 до 20:00<br>
+					сб-вс: с 10:00 до 19:00
+					</p>
+					<a href="#" class="btn">Как проехать</a>
+					<a href="#" class="btn">Обратная связь</a>
+				</div>
+			</section>
+			<section class="content_column_right">
+				<div class="appointment_form">
+					<h2 class="content_column_title">Записаться</h2>
+					<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+					<form action="/echo" method="post">
+						<input type="date" name="date" placegolder="Дата" value="">
+						<input type="time" name="time" placegolder="Время" value="">
+						<input type="text" name="name" placegolder="Ваше Имя" value="">
+						<input type="tel" name="phone" placegolder="Ваш Телефон" value="">
+						<button type="submit" class="btn">Отправить</button>
+					</form>
+				</div>
+			</section>
+		</div>
+	</div>
+	
+	<footer class="main_footer">
+		<div class="container clearfix">
+			<section class="footer_contacts">
+				Бардершоп "Бородинский"<br>
+				Адрес: г. Санкт-Петербург, Б.Конюшенная, д.19/8<br>
+				<a href="#">Как нас найти?</a><br>
+				телефон: +7 (495) 666-02-66
+			</section>
+			<section class="footer_social">
+				<p>Давайте дружить!</p>
+				<a href="#" class="social_btn social_vk">Вконтакте</a>
+				<a href="#" class="social_btn social_fb">Фейсбук</a>
+				<a href="#" class="social_btn social_inst">Инстаграмм</a>
+			</section>
+			<section class="footer_copiright">
+				<p>Дизайн сайта:</p>
+				<a href="#" class="btn">Htmlacademy.ru</a>
+			</section>
+		</div>
+	</footer>
+	<div class="modal_content">
+		<div class="modal_content_close">закрыть</div>
+		<h2 class="modal_content_title">Личный кабинет</h2>
+		<p>Введите пожалуйста свой логин и пароль</p>
+		
+		<form class="login_form" action="/echo" method="post">
+			<input type="text" class="icon_user" name="login" placeholder="Логин">
+			<input type="password" class="icon_password" name="password" placeholder="Пароль" ><br><!--required-->
+			<input type="checkbox" name="remember" id="remember_me">
+			<label for="remember_me"> Запомните меня</label>
+			<a href="#" class="restore">Я забыл пароль!</a>
+			<button type="submit" class="btn">Войти</button>
+		</form>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
